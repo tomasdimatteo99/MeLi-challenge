@@ -7,7 +7,7 @@ class Server{
         //Creación de la aplicación Express.
         this.app = express();
         //Puerto.
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 8080;
         //Path de rutas.
         this.itemPath = '/api/items'
 
