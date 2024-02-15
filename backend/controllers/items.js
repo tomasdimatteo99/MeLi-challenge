@@ -4,20 +4,23 @@ const { formatCategories, formatResponseByQuery, formatResponseById } = require(
 const getItemById = async(req, res) => {
     const id = req.params.id;
 
-    if(!id){
-        //Me gustaría moverlo al catch.
-        return res.status(400).json({ error: 'Falta el parámetro ID.' });
-    }
     try{
-        const responseItem = await axios.get(`https://api.mercadolibre.com/items/${id}`);
-        const responseDescription = await axios.get(`https://api.mercadolibre.com/items/${id}/description`);
-        if(responseItem.data.length === 0){
-            //Me gustaría moverlo al catch.
-            res.status(404).json({ error: 'No fueron encontrados resultados para la búsqueda proporcionada.' });
+        if(!id){
+            throw new Error( 'Falta el parámetro ID.' )
         }
+        //Promise.all
+        const [responseItem, responseDescription] = await Promise.all([
+            axios.get(`https://api.mercadolibre.com/items/${id}`),
+            axios.get(`https://api.mercadolibre.com/items/${id}/description`)
+        ])
+
+        //No funciona esta verificación - Devuelve error 404 el sistema.
+        // if( responseItem.data.id === "null" || !responseDescription.data.plain_text ){
+        //     throw new Error( 'No fueron encontrados resultados para la búsqueda proporcionada.' );
+        // }
+
         //Items
         const items = formatResponseById(responseItem.data);
-
         //Result
         const result = {
             author: {
@@ -30,25 +33,26 @@ const getItemById = async(req, res) => {
 
         res.json(result)
     } catch(err){
-        //Si sucede un error en el servidor, lo mostramos.
-        res.status(500).json({err: err.message});
+        //Error 400 - Bad request
+        res.status(400).json({err: err.message});
     }
 }
 
 const getItemsByQuery = async(req, res) => {
     const query = req.query.q;
 
-    if(!query){
-        //Me gustaría moverlo al catch.
-        res.status(400).json({ error: 'Falta el parámetro de búsqueda.' });
-    }
     try{
+        if(!query){
+            throw new Error( 'Falta el parámetro de búsqueda.' )
+        }
+
         //Solo es necesario visualizar 4 productos. Por lo que ahorramos recursos colocando un limit en el endpoint.
         const response = await axios.get(`https://api.mercadolibre.com/sites/MLA/search?q=${query}&limit=4`);
+
         if(response.data.results.length === 0){
-            //Me gustaría moverlo al catch.
-            res.status(404).json({ error: 'No fueron encontrados resultados para la búsqueda proporcionada.' });
+            throw new Error( 'No fueron encontrados resultados para la búsqueda proporcionada.' );
         }
+
         //Items
         const items = formatResponseByQuery(response.data.results);
         //Categories
@@ -65,8 +69,8 @@ const getItemsByQuery = async(req, res) => {
 
         res.json(result)
     } catch(err){
-        //Si sucede un error en el servidor, lo mostramos.
-        res.status(500).json({err: err.message});
+        //Error 400 - Bad request
+        res.status(400).json({error: err.message});
     }
 }
 
