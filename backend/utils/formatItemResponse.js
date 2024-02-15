@@ -2,7 +2,11 @@ function translateCondition(condition){
     if(condition === "new"){
         return "Nuevo"
     } else{
-        return "Usado"
+        if(condition === "used"){
+            return "Usado"
+        } else{
+            return "No especifica"
+        } 
     }
 }
 
