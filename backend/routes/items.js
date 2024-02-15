@@ -4,11 +4,11 @@
 */
 
 const { Router } = require('express');
-const { itemGetbyId, itemGetbyQuery } = require('../controllers/items');
+const { getItemById, getItemsByQuery } = require('../controllers/items');
 
 const router = Router();
 
-router.get('/:id', itemGetbyId);
-router.get('', itemGetbyQuery);
+router.get('/:id', getItemById);
+router.get('', getItemsByQuery);
 
 module.exports = router;

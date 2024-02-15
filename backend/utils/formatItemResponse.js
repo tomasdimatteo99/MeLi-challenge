@@ -1,5 +1,13 @@
+function translateCondition(condition){
+    if(condition === "new"){
+        return "Nuevo"
+    } else{
+        return "Usado"
+    }
+}
+
 //res = responseItem.data
-function mapItemsbyId(res){
+function formatResponseById(res){
     const response = {
         id: res.id,
         title: res.title,
@@ -10,7 +18,7 @@ function mapItemsbyId(res){
             decimals:2
         },
         picture: res.thumbnail,
-        condition: traducirCondicion(res.condition),
+        condition: translateCondition(res.condition),
         free_shipping: res.shipping.free_shipping,
         sold_quantity: res.sold_quantity || 0 ,
     }
@@ -18,7 +26,7 @@ function mapItemsbyId(res){
 }
 
 //res = response.data.results
-function mapItemsbyQuery(res){
+function formatResponseByQuery(res){
     const response = res.map( item => ({
         id: item.id,
         title: item.title,
@@ -29,24 +37,16 @@ function mapItemsbyQuery(res){
             decimals:2
         },
         picture: item.thumbnail,
-        condition: traducirCondicion(item.condition),
+        condition: translateCondition(item.condition),
         free_shipping: item.shipping.free_shipping
     }))
     return response;
 }
 
-function traducirCondicion(condition){
-    if(condition === "new"){
-        return "Nuevo"
-    } else{
-        return "Usado"
-    }
-}
-
 //res = response.data
-function mapCategories(res){
+function formatCategories(res){
     const filters = res.filters;
-    if(filters){
+    if( filters ){
         const categoryFilter = filters.find( filters => filters.id === "category")
         if( categoryFilter ){
             const values = categoryFilter.values;
@@ -61,7 +61,7 @@ function mapCategories(res){
 }
 
 module.exports = {
-    mapItemsbyId,
-    mapItemsbyQuery,
-    mapCategories
+    formatResponseById,
+    formatResponseByQuery,
+    formatCategories
 }

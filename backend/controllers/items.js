@@ -1,8 +1,9 @@
 const axios = require('axios');
-const { mapCategories, mapItemsbyQuery, mapItemsbyId } = require('../utils/mapItems');
+const { formatCategories, formatResponseByQuery, formatResponseById } = require('../utils/formatItemResponse');
 
-const itemGetbyId = async(req, res) => {
+const getItemById = async(req, res) => {
     const id = req.params.id;
+
     if(!id){
         //Me gustaría moverlo al catch.
         return res.status(400).json({ error: 'Falta el parámetro ID.' });
@@ -15,7 +16,7 @@ const itemGetbyId = async(req, res) => {
             res.status(404).json({ error: 'No fueron encontrados resultados para la búsqueda proporcionada.' });
         }
         //Items
-        const items = mapItemsbyId(responseItem.data);
+        const items = formatResponseById(responseItem.data);
 
         //Result
         const result = {
@@ -27,7 +28,6 @@ const itemGetbyId = async(req, res) => {
             description: responseDescription.data.plain_text
         }
 
-
         res.json(result)
     } catch(err){
         //Si sucede un error en el servidor, lo mostramos.
@@ -35,7 +35,7 @@ const itemGetbyId = async(req, res) => {
     }
 }
 
-const itemGetbyQuery = async(req, res) => {
+const getItemsByQuery = async(req, res) => {
     const query = req.query.q;
 
     if(!query){
@@ -50,9 +50,9 @@ const itemGetbyQuery = async(req, res) => {
             res.status(404).json({ error: 'No fueron encontrados resultados para la búsqueda proporcionada.' });
         }
         //Items
-        const items = mapItemsbyQuery(response.data.results);
+        const items = formatResponseByQuery(response.data.results);
         //Categories
-        const categories = mapCategories(response.data);
+        const categories = formatCategories(response.data);
         //Result
         const result = {
             author: {
@@ -72,6 +72,6 @@ const itemGetbyQuery = async(req, res) => {
 
 
 module.exports = {
-    itemGetbyId,
-    itemGetbyQuery
+    getItemById,
+    getItemsByQuery
 }
