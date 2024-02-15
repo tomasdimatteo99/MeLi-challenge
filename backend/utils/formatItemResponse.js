@@ -17,7 +17,7 @@ function formatResponseById(res){
             //Mejorable con un split del price con un ".".
             decimals:2
         },
-        picture: res.thumbnail,
+        picture: res.pictures[0].url || res.thumbnail,
         condition: translateCondition(res.condition),
         free_shipping: res.shipping.free_shipping,
         sold_quantity: res.sold_quantity || 0 ,
