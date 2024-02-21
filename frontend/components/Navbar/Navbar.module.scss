@@ -1,0 +1,27 @@
+@import "../../styles/sass/globals.scss";
+
+.NavbarStyle{
+    @include container-fluid($width:100vw, $height: 10vh);
+    @include flexRow($alingItems: center);
+    background-color: $bgYellow;
+
+    .contentContainer{
+        @include container();
+        @include flexRow($alingItems: center);
+
+        .barStyle{
+            position: relative;
+        }
+        .LinkStyle{
+            @include flexRow($alingContent: center);
+            @include setMargin-x($margin-x:35px);
+            //position: relative;
+            padding: 5px;
+            img{
+                @include setHeight(8vh);
+                @include setWidth(8vh);
+            }
+        }
+    }
+
+}

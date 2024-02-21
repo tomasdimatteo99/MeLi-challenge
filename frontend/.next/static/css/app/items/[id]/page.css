@@ -1,0 +1,355 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./components/ItemDetail/BuyButton/BuyButton.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+.BuyButton_buttonStyle__PliXt {
+  margin: 0 0 auto;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+.BuyButton_buttonStyle__PliXt button {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+  text-decoration: none;
+  font-weight: normal;
+  background-color: #3483fa;
+  border: 0;
+  border-radius: 4px;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./components/ItemDetail/ItemDetailData/ItemDetailData.module.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+.ItemDetailData_dataContainer__jcF9_ {
+  margin: 0 auto;
+}
+.ItemDetailData_dataContainer__jcF9_ .ItemDetailData_conditionContainer__oPk_Y {
+  margin-bottom: 16px;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  color: #333333;
+  font-weight: normal;
+  text-decoration: none;
+  font-weight: normal;
+}
+.ItemDetailData_dataContainer__jcF9_ .ItemDetailData_titleContainer__JKKj8 {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  font-weight: normal;
+}
+.ItemDetailData_dataContainer__jcF9_ .ItemDetailData_amountContainer__D5xO0 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-family: "Nunito", sans-serif;
+  font-size: 46px;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  font-weight: normal;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./components/ItemDetail/ItemDetailDescription/ItemDetailDescription.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+.ItemDetailDescription_descriptionStyle__uQ1ns {
+  max-width: 50%;
+  min-width: 50%;
+  width: 50%;
+  max-height: auto;
+  min-height: auto;
+  height: auto;
+  max-width: 90%;
+  min-width: 90%;
+  width: 90%;
+}
+.ItemDetailDescription_descriptionStyle__uQ1ns .ItemDetailDescription_descriptionTitleContainer__z306R {
+  margin-top: 32px;
+}
+.ItemDetailDescription_descriptionStyle__uQ1ns .ItemDetailDescription_descriptionTitleContainer__z306R span {
+  font-family: "Nunito", sans-serif;
+  font-size: 28px;
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+  font-weight: normal;
+}
+.ItemDetailDescription_descriptionStyle__uQ1ns .ItemDetailDescription_descriptionContainer__0PT7g p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #666666;
+  font-weight: normal;
+  text-decoration: none;
+  font-weight: normal;
+  margin-top: 32px;
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./components/ItemDetail/ItemDetailImage/ItemDetailImage.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+.ItemDetailImage_itemDetailImgContainer__g4GAa {
+  max-width: 680px;
+  min-width: 680px;
+  width: 680px;
+  max-height: 680px;
+  min-height: 680px;
+  height: 680px;
+  position: relative;
+}
+.ItemDetailImage_itemDetailImgContainer__g4GAa .ItemDetailImage_ImageStyle__0bH3e {
+  border: 0px;
+  border-radius: 4px;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./components/ItemDetail/ItemDetail.module.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+.ItemDetail_itemDetailContainer__lbmNg {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+  max-width: 80vw;
+  min-width: 80vw;
+  width: 80vw;
+  max-height: auto;
+  min-height: auto;
+  height: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  gap: 0;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 540px) {
+  .ItemDetail_itemDetailContainer__lbmNg {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 540px;
+    min-width: 540px;
+    width: 540px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .ItemDetail_itemDetailContainer__lbmNg {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 720px;
+    min-width: 720px;
+    width: 720px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .ItemDetail_itemDetailContainer__lbmNg {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 960px;
+    min-width: 960px;
+    width: 960px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .ItemDetail_itemDetailContainer__lbmNg {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 1140px;
+    min-width: 1140px;
+    width: 1140px;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  .ItemDetail_itemDetailContainer__lbmNg {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 1320px;
+    min-width: 1320px;
+    width: 1320px;
+  }
+}
+.ItemDetail_itemDetailContainer__lbmNg .ItemDetail_leftColumn__OZYEG {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+  max-width: 100vw;
+  min-width: 100vw;
+  width: 100vw;
+  max-height: auto;
+  min-height: auto;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: stretch;
+  gap: 0;
+  max-width: 60%;
+  min-width: 60%;
+  width: 60%;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+@media only screen and (max-width: 540px) {
+  .ItemDetail_itemDetailContainer__lbmNg .ItemDetail_leftColumn__OZYEG {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 540px;
+    min-width: 540px;
+    width: 540px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .ItemDetail_itemDetailContainer__lbmNg .ItemDetail_leftColumn__OZYEG {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 720px;
+    min-width: 720px;
+    width: 720px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .ItemDetail_itemDetailContainer__lbmNg .ItemDetail_leftColumn__OZYEG {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 960px;
+    min-width: 960px;
+    width: 960px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .ItemDetail_itemDetailContainer__lbmNg .ItemDetail_leftColumn__OZYEG {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 1140px;
+    min-width: 1140px;
+    width: 1140px;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  .ItemDetail_itemDetailContainer__lbmNg .ItemDetail_leftColumn__OZYEG {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 1320px;
+    min-width: 1320px;
+    width: 1320px;
+  }
+}
+.ItemDetail_itemDetailContainer__lbmNg .ItemDetail_rightColumn__wcZtk {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+  max-width: 100vw;
+  min-width: 100vw;
+  width: 100vw;
+  max-height: auto;
+  min-height: auto;
+  height: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: stretch;
+  gap: 0;
+  max-width: 40%;
+  min-width: 40%;
+  width: 40%;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+  margin: 0 0 auto;
+}
+@media only screen and (max-width: 540px) {
+  .ItemDetail_itemDetailContainer__lbmNg .ItemDetail_rightColumn__wcZtk {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 540px;
+    min-width: 540px;
+    width: 540px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .ItemDetail_itemDetailContainer__lbmNg .ItemDetail_rightColumn__wcZtk {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 720px;
+    min-width: 720px;
+    width: 720px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .ItemDetail_itemDetailContainer__lbmNg .ItemDetail_rightColumn__wcZtk {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 960px;
+    min-width: 960px;
+    width: 960px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .ItemDetail_itemDetailContainer__lbmNg .ItemDetail_rightColumn__wcZtk {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 1140px;
+    min-width: 1140px;
+    width: 1140px;
+  }
+}
+@media only screen and (max-width: 1320px) {
+  .ItemDetail_itemDetailContainer__lbmNg .ItemDetail_rightColumn__wcZtk {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    padding-right: auto;
+    max-width: 1320px;
+    min-width: 1320px;
+    width: 1320px;
+  }
+}

@@ -10,16 +10,28 @@ function translateCondition(condition){
     }
 }
 
+function countDecimals( amount ) {
+    const decimalPart = amount.toString().split('.')[1];
+    return decimalPart ? decimalPart.length : 0;
+}
+
+function simplifyCurrency( currency ){
+    if( currency === "ARS" ){
+        return "$"
+    } else{
+        return "U$S"
+    }
+}
+
 //res = responseItem.data
 function formatResponseById(res){
     const response = {
         id: res.id,
         title: res.title,
         price: {
-            currency: res.currency_id,
+            currency: simplifyCurrency( res.currency_id ),
             amount: res.price,
-            //Mejorable con un split del price con un ".".
-            decimals:2
+            decimals: countDecimals(res.price)
         },
         picture: res.pictures[0].url || res.thumbnail,
         condition: translateCondition(res.condition),
@@ -35,10 +47,9 @@ function formatResponseByQuery(res){
         id: item.id,
         title: item.title,
         price: {
-            currency: item.currency_id,
+            currency: simplifyCurrency( item.currency_id ),
             amount: item.price,
-            //Mejorable con un split del price con un ".".
-            decimals:2
+            decimals: countDecimals(item.price)
         },
         picture: item.thumbnail,
         condition: translateCondition(item.condition),

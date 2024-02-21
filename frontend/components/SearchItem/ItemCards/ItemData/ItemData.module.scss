@@ -1,0 +1,13 @@
+@import "../../../../styles/sass/globals.scss";
+
+.itemData{
+    margin-top: 16px;
+    @include setDimension($width: 50%, $height:auto);
+    span{
+        @include defaultFormat($fontSize: $fontSizeL);
+    }
+    h2{
+        @include defaultFormat($fontSize: $fontSizeM);
+        margin-top: 32px;
+    }
+}

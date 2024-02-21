@@ -1,0 +1,7 @@
+@import "../../../../styles/sass/globals.scss";
+.itemLocation {
+    span {
+        @include defaultFormat($fontSize: $fontSizeXXS, $textColor: $bgGray);
+    }
+    margin: 0 auto;
+}
