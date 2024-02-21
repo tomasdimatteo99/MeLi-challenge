@@ -83,6 +83,10 @@
   background-color: white;
   border-radius: 4px;
 }
+.ItemCard_itemCardContainer__YOS9t a {
+  text-decoration: none;
+  color: inherit;
+}
 .ItemCard_itemCardContainer__YOS9t .ItemCard_itemCard__F20_V {
   margin-left: 16px;
   margin-right: 16px;

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import style from "./ItemCard.module.scss";
 import ItemData from "./ItemData/ItemData";
 import ItemImage from "./ItemImage/ItemImage";
@@ -7,18 +8,22 @@ export default function ItemCard(props) {
   return (
     <div className={style.itemCardContainer}>
       {props.items.map((item, j) => (
-        <div key={item.id} className={style.itemCard}>
-          <ItemImage
-          picture={item.picture}
-          title={item.title}
-          />
-          <ItemData
-            currency={item.price.currency}
-            amount={item.price.amount}
+        <Link
+          href={`/items/${item.id}`}
+          key={item.id}
+          className={style.itemCard}
+        >
+            <ItemImage
+            picture={item.picture}
             title={item.title}
-          />
-          <ItemLocation/>
-        </div>
+            />
+            <ItemData
+              currency={item.price.currency}
+              amount={item.price.amount}
+              title={item.title}
+            />
+            <ItemLocation/>
+        </Link>
       ))}
     </div>
   );
