@@ -8,8 +8,8 @@
 /coverage
 
 # next.js
-/.next
-/out/
+/frontend/.next
+/frontend/out/
 
 #local .env
 .env
