@@ -17,7 +17,7 @@
             $margin-b:0px
         );
         padding-bottom: 16px;
-        @include flexRow($justifyContent: flex-start);
+        @include flexRow($justifyContent: flex-start, $alingItems:center);
         border-bottom: 3px solid $bgLightGray;
     }
 }

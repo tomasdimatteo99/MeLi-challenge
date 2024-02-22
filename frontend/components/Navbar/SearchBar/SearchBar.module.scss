@@ -20,9 +20,16 @@
         background-color: $bgLightGray;
         border: none;
         border-radius: 0 4px 4px 0;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover{
+            background-color: darken($bgLightGray, 10%)
+        }
+
         .icoSize{
             @include setHeight(1.5rem);
             @include setWidth(2rem);
         }
+        
     }
 }

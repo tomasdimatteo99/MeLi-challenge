@@ -1,7 +1,8 @@
+import style from './loading.module.scss'
 
 export default function NamePage() {
   return (
-    <div>
+    <div className={style.loadingContainer}>
       <h2>Cargando...</h2>
     </div>
   );

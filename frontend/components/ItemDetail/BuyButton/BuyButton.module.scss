@@ -15,5 +15,10 @@
         background-color: $bgBlue;
         border: 0;
         border-radius: 4px;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover{
+            background-color: darken($bgBlue, 10%)
+        }
     }
 }
