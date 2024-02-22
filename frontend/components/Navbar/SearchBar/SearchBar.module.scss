@@ -4,7 +4,7 @@
     @include flexRow($alingItems: center);
     .inputStyle{
         @include setHeight(6vh);
-        @include setWidth(50vw);
+        @include setWidth(55vw);
         @include defaultFormat(
             $fontSize: $fontSizeM,
             $textColor: $bgGray

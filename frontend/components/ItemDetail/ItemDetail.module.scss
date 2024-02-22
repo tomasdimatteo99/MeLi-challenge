@@ -1,3 +1,4 @@
+@use "../../styles/sass/variable/mediaQueries" as mediaQuery;
 @import '../../styles/sass/globals.scss';
 
 .itemDetailContainer{
@@ -20,5 +21,11 @@
         @include setWidth($width:40%);
         @include setPadding($padding: 32px);
         margin: 0 0 auto;
+    }
+
+    @media #{mediaQuery.$md} {
+        @include container($height:100%);
+        @include setWidth($md-px);
+        @include flexColumn();
     }
 }
