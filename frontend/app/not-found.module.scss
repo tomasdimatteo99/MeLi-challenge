@@ -1,0 +1,42 @@
+@import "../styles/sass/globals.scss";
+
+.errorContainer{
+    @include container($height:80vh);
+    @include flexColumn(
+        $justifyContent:center,
+        $alingItems:center,
+    );
+
+    h2{
+        @include defaultFormat(
+            $textColor: $bgDarkGray,
+            $fontSize: $fontSizeXXL
+        )
+    }
+
+    p{
+        border-top: 2px solid $bgGray;
+        padding-top: 5px;
+        @include defaultFormat(
+            $textColor: $bgDarkGray,
+            $fontSize: $fontSizeM
+        )
+    }
+    a{
+        @include setMargin($margin: 32px);
+        @include setPadding($padding: 10px);
+
+        background-color: $bgBlue;
+        border: 2px solid $bgBlue;
+        border-radius: 4px;
+        text-decoration: none;
+        color: inherit;
+
+        span{
+            @include defaultFormat(
+                $textColor: white,
+                $fontSize: $fontSizeS
+            );
+        }
+    }
+}

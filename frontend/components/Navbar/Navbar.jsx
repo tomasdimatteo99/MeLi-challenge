@@ -1,24 +1,16 @@
-import Link from "next/link";
-import Image from "next/image";
+import SearchBar from "./SearchBar/SearchBar"
+import Logo from "./Logo/Logo";
 import style from './Navbar.module.scss';
-import { SearchBar } from "./SearchBar/SearchBar"
 
 export const Navbar = async() => {
 
   return (
-    <nav className={style.NavbarStyle}>
+    <nav className={style.navbarContainer}>
       <div className={style.contentContainer}>
-        <div className={style.LinkStyle}>
-          <Link href={'/'}>
-            <Image
-              src="/logoML.png"
-              width={100}
-              height={100}
-              alt="Logo de Mercado Libre"
-            />
-          </Link>
+        <div className={style.logoContainer}>
+          <Logo/>
         </div>
-        <div className={style.barStle}>
+        <div className={style.searchBarContainer}>
           <SearchBar/>
         </div>
       </div>

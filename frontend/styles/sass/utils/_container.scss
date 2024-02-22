@@ -64,7 +64,7 @@
 
 @mixin setPadding-y($padding-y){
     padding-top: $padding-y;
-    padding-bottom: $padding-t;
+    padding-bottom: $padding-y;
 }
 
 //Modeling
@@ -123,4 +123,16 @@
         $width,
         $height
     );
+}
+
+@mixin simpleContainer(
+    $padding-x: 14px,
+    $margin-x: auto,
+    $width: 100vw,
+    $height: auto
+){
+    @include setMargin-x($margin-x);
+    @include setPadding-x($margin-x);
+    @include setWidth($width);
+    @include setHeight($height);
 }

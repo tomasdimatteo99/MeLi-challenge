@@ -1,27 +1,22 @@
 @import "../../styles/sass/globals.scss";
 
-.NavbarStyle{
-    @include container-fluid($width:100vw, $height: 10vh);
+.navbarContainer {
+  @include container-fluid($width: 100%, $height: 13vh);
+  background-color: $bgYellow;
+  .contentContainer{
+    @include simpleContainer($width: 80vw, $height: 13vh);
     @include flexRow($alingItems: center);
-    background-color: $bgYellow;
 
-    .contentContainer{
-        @include container();
-        @include flexRow($alingItems: center);
-
-        .barStyle{
-            position: relative;
-        }
-        .LinkStyle{
-            @include flexRow($alingContent: center);
-            @include setMargin-x($margin-x:35px);
-            //position: relative;
-            padding: 5px;
-            img{
-                @include setHeight(8vh);
-                @include setWidth(8vh);
-            }
-        }
+    .logoContainer{
+      @include flexRow($alingItems: center);
+      @include simpleContainer($width:25vw, $height: 100%);
+      @include setPadding($padding: 16px)
     }
 
+    .searchBarContainer{
+      @include flexRow($alingItems: center);
+      @include simpleContainer($width:65vw, $height: 100%);
+      @include setPadding($padding: 16px)
+    }
+  }
 }

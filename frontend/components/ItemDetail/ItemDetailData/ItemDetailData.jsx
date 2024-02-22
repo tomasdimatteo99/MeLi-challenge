@@ -19,7 +19,10 @@ export default function ItemDetailData(props) {
       </div>
       <div className={style.amountContainer}>
         <h2>
-          {props.currency} {props.amount}
+          {Number(props.amount).toLocaleString("es-AR",{
+            style: "currency",
+            currency: props.currency
+          })}
         </h2>
       </div>
     </div>

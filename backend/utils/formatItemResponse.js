@@ -15,21 +15,13 @@ function countDecimals( amount ) {
     return decimalPart ? decimalPart.length : 0;
 }
 
-function simplifyCurrency( currency ){
-    if( currency === "ARS" ){
-        return "$"
-    } else{
-        return "U$S"
-    }
-}
-
 //res = responseItem.data
 function formatResponseById(res){
     const response = {
         id: res.id,
         title: res.title,
         price: {
-            currency: simplifyCurrency( res.currency_id ),
+            currency: res.currency_id,
             amount: res.price,
             decimals: countDecimals(res.price)
         },
@@ -47,7 +39,7 @@ function formatResponseByQuery(res){
         id: item.id,
         title: item.title,
         price: {
-            currency: simplifyCurrency( item.currency_id ),
+            currency: item.currency_id,
             amount: item.price,
             decimals: countDecimals(item.price)
         },

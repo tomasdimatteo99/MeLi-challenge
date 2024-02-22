@@ -7,8 +7,8 @@ export default function ItemDetailImage(props) {
       <Image
         src={props.picture}
         alt={props.title}
-        layout="fill"
-        objectFit="contain"
+        fill
+        style={{objectFit:"contain"}}
         className={style.ImageStyle}
       />
     </div>
