@@ -10,7 +10,7 @@
         font-family: "Nunito", sans-serif;
     }
     body{
-        @include container($width: 100vw);
+        @include container-fluid($width:100vw);
         background: $bgLightGray;
     }
 }

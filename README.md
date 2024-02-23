@@ -2,15 +2,15 @@
 
 # Mercado Libre - Frontend Challenge.
 
-El challenge consiste en crear una aplicación web la cual consta de tres vistas:
+El challenge consiste en crear una aplicación web la cual consta de tres vistas navegables:
 
 1. Caja de búsqueda
 2. Resultado de búsqueda
 3. Detalle de producto.
 
-En la aplicación el usuario es capaz de ingresar un producto deseado en la caja de búsqueda y enviar el formulario. Luego, la aplicación navegará a la vista de resultados, visualizando 4 productos. Desde allí el usuario será capaz de clickear en los productos, lo que provocará que la aplicación navegue a la vista que muestra el detalle y descripción del producto clickeado.
+En la aplicación el usuario es capaz de ingresar un producto deseado en la caja de búsqueda y enviar el formulario. Luego, la aplicación navegará a la vista de resultados, visualizando 4 productos. Desde allí el usuario también será capaz de clickear en los productos, lo que provocará que la aplicación navegue a la vista que muestra el detalle y descripción del producto clickeado.
 
-## Tecnologías aplicadas:
+## ⚙️ Tecnologías aplicadas:
 
 * Backend:
     - Node.js (v20.10.0)
@@ -30,36 +30,45 @@ En la aplicación el usuario es capaz de ingresar un producto deseado en la caja
     - Axios (1.6.7), biblioteca de JS.
 
 
-## Ejecución de la aplicación de forma local:
-1. Instalar dependencias:
-    - Ejecutar 'npm install' en la carpeta raíz.
-2. Ejecutar el backend:
-    - Desplazarse a la carpeta del backend:
-        * Ejecutar 'cd ./backend' en la carpeta raíz.
-    - Ejecutar 'npm run dev' en la carpeta backend.
-    * Atención: correrá por defecto en 'http://localhost:8080/'. En caso de necesitar correrlo
+## 💻 Ejecución de la aplicación de forma local:
+
+* Ejecutar el backend:
+    1. Desplazarse a la carpeta del backend:
+        - Ejecutar 'cd ./backend' en la carpeta raíz.
+    2. Instalar dependencias:
+        - Ejecutar 'npm install' en la carpeta backend.
+    3. Correr el backend:
+        - Ejecutar 'npm run dev' en la carpeta backend.
+    * *Atención*: correrá por defecto en 'http://localhost:8080/'. En caso de necesitar correrlo
     en otro puerto deberá crear un archivo .env y dentro colocar la variable de entorno:
     'PORT=(puerto deseado)' 
-3. Ejecutar el frontend:
-    - Desplazarse a la carpeta del frontend:
-        * Ejecutar 'cd ./frontend' en la carpeta raíz.
-    - Ejecutar 'npm run dev' en la carpeta frontend.
-    * Atención: correrá por defecto en 'http://localhost:3000/'.
+
+* Ejecutar el frontend:
+    1. Desplazarse a la carpeta del frontend:
+        - Ejecutar 'cd ./frontend' en la carpeta raíz.
+        - O ejecutar 'cd ../frontend' en la carpeta backend.
+    2. Instalar dependencias:
+        - Ejecutar 'npm install' en la carpeta frontend.
+    3. Correr el frontend:
+        - Ejecutar 'npm run dev' en la carpeta frontend.
+    * *Atención*: correrá por defecto en 'http://localhost:3000/'.
+
+*Es necesario ejecutar ambos para que el programa funcione correctamente.*
 
 * Para visualizar la aplicación colocar la URL 'http://localhost:3000/' en su navegador.
 
-## Detalle de vistas.
-1. Caja de búsqueda (Inicio) - URL 'url/'.
+## 🧑‍💻 Detalle de vistas.
+1. Caja de búsqueda (Inicio) - *URL* 'url/'.
     Contiene:
     - Navbar con un input de búsqueda (barra de búsqueda). La cuál tendrán en común todas las vistas.
-2. Resultado de búsqueda - URL 'url/items?search=:queryParam'
+2. Resultado de búsqueda - *URL* 'url/items?search=:queryParam'
     Contiene:
     - Navbar.
     - Contenedor con los 4 resultados de búsqueda. Consiste en 4 cards de productos, clickeables individualmente. Cada una de ellas contendrá:
         * Imágen del producto.
         * Precio y título del producto.
         * Localidad del vendedor.
-3. Detalle de producto - URL 'url/items/:idParam'
+3. Detalle de producto - *URL* 'url/items/:idParam'
     Contiene:
     - Navbar.
     - Contenedor con el detalle del producto clickeado o buscado por URL. Consiste en dos columnas:
@@ -76,7 +85,7 @@ Extras:
 - not-found: cuando ocurra un error en las búsquedas, se mostrará una página 404.
 - loading: cuando el componente comience a cargar los resultados, se mostrará una página de carga.
 
-## Estructura del proyecto:
+## 🏗️ Estructura del proyecto:
 La carpeta raiz contiene dos carpetas principales del proyecto:
 ### - Backend:
 #### Node.js + Express.
@@ -93,7 +102,7 @@ La carpeta raiz contiene dos carpetas principales del proyecto:
         Recibe una respuesta de la API con el detalle y la descripción del producto, utilizando un Promise All en conjunto con Axios. Las estructura en una sola y le establece formato JSON de acuerdo a los requerimientos establecidos y será devuelto para luego ser utilizado en el frontend, específicamente en la vista 3.
 
 #### Next.js
-- Por falta de tiempo, se crean 2 getters extras con Next.js. Los cuales deberán ser movidos al backend (aplicándolos con Node.js + Express).
+- Por falta de tiempo, creé 2 getters extras con Next.js. Los cuales deberán ser movidos al backend, aplicándolos con Node.js + Express.
     1. getCategories
         - Función que recibe como parámetro el ID del producto buscado o clickeado. En base al ID param realiza un llamado a la api:
         https://api.mercadolibre.com/categories/:id
@@ -112,7 +121,7 @@ Estructura:
 - Utils: se crean esqueletos de funciones de estilos (mixins). Esto permite reutilizar el código generado en CSS, ahorrar tiempo al momento de codear, una mayor organización y escalabilidad.
 - Variables: se crean variables las cuales contienen los colores, fuentes y media queries. Esto permite aplicarlos facilmente, reutilización, escalabilidad y responsive.
 
-## Posibles mejoras:
+## 💡 Posibles mejoras:
 ### General:
  - Mejorar la estructura de las carpetas. No me convence del todo tener dividido en frontend y backend. Por falta de conocimiento lo organicé de esta manera. Me gustaría encontrar una forma más eficiente de hacerlo.
  - Simplificar la ejecución del mismo en un solo comando.
@@ -121,9 +130,11 @@ Estructura:
  - Mover las funciones getCategories y getLocation del frontend al backend.
  - Testing. No logré realizarlo correctamente por falta de conocimiento de testing en el backend. La falta de tiempo me imposiblitó buscar más información sobre ello.
 ### Frontend:
+ - Crear variables de URL para darle mayor prolijidad y escalabilidad al código.
  - Responsive: es muy básico, se adecúa a los tamaños de las pantallas sin que nada se salga de la vista del usuario. Es necesario que mejor estéticamente, debido a que:
     * El tamaño de la searchbar se achica en pantallas pequeñas.
     * En la vista de detalle de producto, la reorganización de las dos columnas a una sola desacomoda el órden de los datos en cuestión. En algunos casos se cortan los datos. Me hubiese gustado gestionarlo mejor, pero por falta de tiempo se me imposibilitó.
  - Mejorar el formato de la moneda. No logré acomodar los decimales como se muestra en las vistas de ejemplo del proyecto.
  - Mejorar el SEO de forma más completa.
+ - Solucionar error del body. Tiene mayor tamaño que los demás componentes.
  
