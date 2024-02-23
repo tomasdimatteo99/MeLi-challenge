@@ -10,18 +10,40 @@ El challenge consiste en crear una aplicación web la cual consta de tres vistas
 
 En la aplicación el usuario es capaz de ingresar un producto deseado en la caja de búsqueda y enviar el formulario. Luego, la aplicación navegará a la vista de resultados, visualizando 4 productos. Desde allí el usuario será capaz de clickear en los productos, lo que provocará que la aplicación navegue a la vista que muestra el detalle y descripción del producto clickeado.
 
-## Ejecución de la aplicación de forma local:
-    1º Instalar dependencias: ejecutar 'npm install' en la carpeta raíz.
-    2º Ejecutar el backend:
-        - Desplazarse a la carpeta del backend: ejecutar 'cd ./backend' en la carpeta raíz.
-        - Ejecutar 'npm run dev' en la carpeta backend.
-        * Atención: correrá por defecto en 'http://localhost:8080/'. En caso de necesitar correrlo en otro puerto deberá crear un archivo .env y dentro colocar la variable de entorno 'PORT=(puerto deseado)' 
-    3º Ejecutar el frontend:
-        - Desplazarse a la carpeta del frontend: ejecutar 'cd ./frontend' en la carpeta raíz.
-        - Ejecutar 'npm run dev' en la carpeta frontend.
-        * Atención: correrá por defecto en 'http://localhost:3000/'.
+## Tecnologías aplicadas:
 
-    Para visualizar la aplicación colocar la URL 'http://localhost:3000/' en su navegador.
+* Backend:
+- Node.js (v20.10.0)
+- Express (v4.18.2), framework de Node.js
+- CORS (v2.8.5)
+- DotEnv (v16.4.4)
+
+* Frontend:
+- React.js (v18)
+- Next.js (v14.1.0), framework de React.js SSR
+- Enrutamiento de Next.js App Router
+- JavaScript para el tipado
+- SASS (v1.71.0)
+- Eslint (v8)
+
+* Ambos:
+- Axios (1.6.7), biblioteca de JS.
+
+
+## Ejecución de la aplicación de forma local:
+1. Instalar dependencias: ejecutar 'npm install' en la carpeta raíz.
+2. Ejecutar el backend:
+    - Desplazarse a la carpeta del backend: ejecutar 'cd ./backend' en la carpeta raíz.
+    - Ejecutar 'npm run dev' en la carpeta backend.
+    * Atención: correrá por defecto en 'http://localhost:8080/'. En caso de necesitar correrlo
+    en otro puerto deberá crear un archivo .env y dentro colocar la variable de entorno:
+    'PORT=(puerto deseado)' 
+3. Ejecutar el frontend:
+    - Desplazarse a la carpeta del frontend: ejecutar 'cd ./frontend' en la carpeta raíz.
+    - Ejecutar 'npm run dev' en la carpeta frontend.
+    * Atención: correrá por defecto en 'http://localhost:3000/'.
+
+* Para visualizar la aplicación colocar la URL 'http://localhost:3000/' en su navegador.
 
 ## Detalle de vistas.
 1. Caja de búsqueda (Inicio) - URL 'url/'.
@@ -48,14 +70,14 @@ En la aplicación el usuario es capaz de ingresar un producto deseado en la caja
             * Botón de compra.
 
 Extras:
-    - not-found: cuando ocurra un error en las búsquedas, se mostrará una página 404.
-    - loading: cuando el componente comience a cargar los resultados, se mostrará una página de carga.
+- not-found: cuando ocurra un error en las búsquedas, se mostrará una página 404.
+- loading: cuando el componente comience a cargar los resultados, se mostrará una página de carga.
 
 ### Estructura del proyecto:
-La carpeta raiz contiene las dos carpetas principales que contienen el proyecto.
+La carpeta raiz contiene dos carpetas principales del proyecto:
 #### - Backend:
-Node.js + Express.
-Contiene 2 endpoints principales:
+##### Node.js + Express.
+- Contiene 2 endpoints principales:
     1. getItemsByQuery "/api/items?q=:query"
         - Función que recibe como parámetro una query, que es lo que el usuario ingresa en el input. En base al query param realiza un llamado a la api, de acuerdo al endpoint especificado:
         https://api.mercadolibre.com/sites/MLA/search?q=:query
@@ -67,10 +89,10 @@ Contiene 2 endpoints principales:
         https://api.mercadolibre.com/items/:id/description
         Recibe una respuesta de la API con el detalle y la descripción del producto, utilizando un Promise All en conjunto con Axios. Las estructura en una sola y le establece formato JSON de acuerdo a los requerimientos establecidos y será devuelto para luego ser utilizado en el frontend, específicamente en la vista 3.
 
-Next.js
-Por falta de tiempo, se crean 2 getters extras con Next.js. Los cuales serán movidos al backend (aplicándolos con Node.js + Express).
+##### Next.js
+- Por falta de tiempo, se crean 2 getters extras con Next.js. Los cuales deberán ser movidos al backend (aplicándolos con Node.js + Express).
     1. getCategories
-        - Función que recibe como parámetro el ID del producto buscado o seleccionado. En base al ID param realiza un llamado a la api:
+        - Función que recibe como parámetro el ID del producto buscado o clickeado. En base al ID param realiza un llamado a la api:
         https://api.mercadolibre.com/categories/:id
         Recibe respuestas de la API con las categorías, utilizando Axios. Lo estructura y le establece formato JSON para ser fácilmente utilizado en el frontend, en las vistas 2 y 3.
 
@@ -80,7 +102,7 @@ Por falta de tiempo, se crean 2 getters extras con Next.js. Los cuales serán mo
         Recibe una respuesta de la API con el detalle del producto, del cual extraeremos la localidad del vendedor, utilizando Axios. Lo estructura y le establece formato JSON para ser fácilmente utilizado en el frontend, específicamente en la vista 2. Se repetirá por cada producto renderizado.
 
 #### - Frontend:
-Next.js (App Router) + SASS
+##### Next.js SSR (App Router) + SASS
 Estructura:
 - App y components: desarrollo de las vistas complementadas con componentes modularizados y algunos reutilizables, enrutadas en base a App Router.
 - Components: cada componente y vista contendrá individualmente su módulo de SASS. Lo que permitirá una mayor legibilidad en el código, una mejor organización, escalabilidad y responsive.
