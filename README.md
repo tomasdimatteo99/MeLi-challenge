@@ -13,33 +13,36 @@ En la aplicación el usuario es capaz de ingresar un producto deseado en la caja
 ## Tecnologías aplicadas:
 
 * Backend:
-- Node.js (v20.10.0)
-- Express (v4.18.2), framework de Node.js
-- CORS (v2.8.5)
-- DotEnv (v16.4.4)
+    - Node.js (v20.10.0)
+    - Express (v4.18.2), framework de Node.js
+    - CORS (v2.8.5)
+    - DotEnv (v16.4.4)
 
 * Frontend:
-- React.js (v18)
-- Next.js (v14.1.0), framework de React.js SSR
-- Enrutamiento de Next.js App Router
-- JavaScript para el tipado
-- SASS (v1.71.0)
-- Eslint (v8)
+    - React.js (v18)
+    - Next.js (v14.1.0), framework de React.js SSR
+    - Enrutamiento de Next.js App Router
+    - JavaScript para el tipado
+    - SASS (v1.71.0), procesador de CSS.
+    - Eslint (v8)
 
 * Ambos:
-- Axios (1.6.7), biblioteca de JS.
+    - Axios (1.6.7), biblioteca de JS.
 
 
 ## Ejecución de la aplicación de forma local:
-1. Instalar dependencias: ejecutar 'npm install' en la carpeta raíz.
+1. Instalar dependencias:
+    - Ejecutar 'npm install' en la carpeta raíz.
 2. Ejecutar el backend:
-    - Desplazarse a la carpeta del backend: ejecutar 'cd ./backend' en la carpeta raíz.
+    - Desplazarse a la carpeta del backend:
+        * Ejecutar 'cd ./backend' en la carpeta raíz.
     - Ejecutar 'npm run dev' en la carpeta backend.
     * Atención: correrá por defecto en 'http://localhost:8080/'. En caso de necesitar correrlo
     en otro puerto deberá crear un archivo .env y dentro colocar la variable de entorno:
     'PORT=(puerto deseado)' 
 3. Ejecutar el frontend:
-    - Desplazarse a la carpeta del frontend: ejecutar 'cd ./frontend' en la carpeta raíz.
+    - Desplazarse a la carpeta del frontend:
+        * Ejecutar 'cd ./frontend' en la carpeta raíz.
     - Ejecutar 'npm run dev' en la carpeta frontend.
     * Atención: correrá por defecto en 'http://localhost:3000/'.
 
@@ -73,10 +76,10 @@ Extras:
 - not-found: cuando ocurra un error en las búsquedas, se mostrará una página 404.
 - loading: cuando el componente comience a cargar los resultados, se mostrará una página de carga.
 
-### Estructura del proyecto:
+## Estructura del proyecto:
 La carpeta raiz contiene dos carpetas principales del proyecto:
-#### - Backend:
-##### Node.js + Express.
+### - Backend:
+#### Node.js + Express.
 - Contiene 2 endpoints principales:
     1. getItemsByQuery "/api/items?q=:query"
         - Función que recibe como parámetro una query, que es lo que el usuario ingresa en el input. En base al query param realiza un llamado a la api, de acuerdo al endpoint especificado:
@@ -89,7 +92,7 @@ La carpeta raiz contiene dos carpetas principales del proyecto:
         https://api.mercadolibre.com/items/:id/description
         Recibe una respuesta de la API con el detalle y la descripción del producto, utilizando un Promise All en conjunto con Axios. Las estructura en una sola y le establece formato JSON de acuerdo a los requerimientos establecidos y será devuelto para luego ser utilizado en el frontend, específicamente en la vista 3.
 
-##### Next.js
+#### Next.js
 - Por falta de tiempo, se crean 2 getters extras con Next.js. Los cuales deberán ser movidos al backend (aplicándolos con Node.js + Express).
     1. getCategories
         - Función que recibe como parámetro el ID del producto buscado o clickeado. En base al ID param realiza un llamado a la api:
@@ -101,8 +104,8 @@ La carpeta raiz contiene dos carpetas principales del proyecto:
         https://api.mercadolibre.com/items/:id
         Recibe una respuesta de la API con el detalle del producto, del cual extraeremos la localidad del vendedor, utilizando Axios. Lo estructura y le establece formato JSON para ser fácilmente utilizado en el frontend, específicamente en la vista 2. Se repetirá por cada producto renderizado.
 
-#### - Frontend:
-##### Next.js SSR (App Router) + SASS
+### - Frontend:
+#### Next.js SSR (App Router) + SASS
 Estructura:
 - App y components: desarrollo de las vistas complementadas con componentes modularizados y algunos reutilizables, enrutadas en base a App Router.
 - Components: cada componente y vista contendrá individualmente su módulo de SASS. Lo que permitirá una mayor legibilidad en el código, una mejor organización, escalabilidad y responsive.
