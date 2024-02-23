@@ -53,7 +53,7 @@ En la aplicación el usuario es capaz de ingresar un producto deseado en la caja
         - Ejecutar 'npm run dev' en la carpeta frontend.
     * *Atención*: correrá por defecto en 'http://localhost:3000/'.
 
-*Es necesario ejecutar ambos para que el programa funcione correctamente.*
+*Es necesario ejecutar ambos para que la aplicación funcione correctamente.*
 
 * Para visualizar la aplicación colocar la URL 'http://localhost:3000/' en su navegador.
 
@@ -90,12 +90,12 @@ La carpeta raiz contiene dos carpetas principales del proyecto:
 ### - Backend:
 #### Node.js + Express.
 - Contiene 2 endpoints principales:
-    1. getItemsByQuery "/api/items?q=:query"
+    1. getItemsByQuery - apunta a: "/api/items?q=:query"
         - Función que recibe como parámetro una query, que es lo que el usuario ingresa en el input. En base al query param realiza un llamado a la api, de acuerdo al endpoint especificado:
         https://api.mercadolibre.com/sites/MLA/search?q=:query
         Recibe una respuesta de la API con los resultados de la búsqueda, utilizando Axios. Lo estructura y le establece formato JSON de acuerdo a los requerimientos establecidos y será devuelto para luego ser utilizado en el frontend, específicamente en la vista 2.
 
-    2. getItemById "/api/items/:id"
+    2. getItemById - apunta a: "/api/items/:id"
         - Función que recibe como parámetro un ID, el cual corresponde al producto clickeado. En base al ID param realiza un llamado a la api, de acuerdo a los endpoints especificados:
         https://api.mercadolibre.com/items/:id
         https://api.mercadolibre.com/items/:id/description
@@ -116,10 +116,10 @@ La carpeta raiz contiene dos carpetas principales del proyecto:
 ### - Frontend:
 #### Next.js SSR (App Router) + SASS
 Estructura:
-- App y components: desarrollo de las vistas complementadas con componentes modularizados y algunos reutilizables, enrutadas en base a App Router.
-- Components: cada componente y vista contendrá individualmente su módulo de SASS. Lo que permitirá una mayor legibilidad en el código, una mejor organización, escalabilidad y responsive.
+- App y components: desarrollo de vistas complementadas con componentes modularizados y algunos reutilizables, enrutadas en base a App Router. Cada vista principal contedrá su metadata que se encargará de generar el SEO correspondiente de la página.
+- Components: cada componente y vista contendrá individualmente su módulo de SASS. Lo que permitirá una mayor legibilidad en el código de estilos, una mejor organización, escalabilidad y responsive.
 - Utils: se crean esqueletos de funciones de estilos (mixins). Esto permite reutilizar el código generado en CSS, ahorrar tiempo al momento de codear, una mayor organización y escalabilidad.
-- Variables: se crean variables las cuales contienen los colores, fuentes y media queries. Esto permite aplicarlos facilmente, reutilización, escalabilidad y responsive.
+- Variables: se crean variables las cuales contienen los colores, fuentes y media queries requeridos. Esto permite aplicarlos facilmente, reutilización, escalabilidad y responsive.
 
 ## 💡 Posibles mejoras:
 ### General:
@@ -132,9 +132,9 @@ Estructura:
 ### Frontend:
  - Crear variables de URL para darle mayor prolijidad y escalabilidad al código.
  - Responsive: es muy básico, se adecúa a los tamaños de las pantallas sin que nada se salga de la vista del usuario. Es necesario que mejor estéticamente, debido a que:
-    * El tamaño de la searchbar se achica en pantallas pequeñas.
-    * En la vista de detalle de producto, la reorganización de las dos columnas a una sola desacomoda el órden de los datos en cuestión. En algunos casos se cortan los datos. Me hubiese gustado gestionarlo mejor, pero por falta de tiempo se me imposibilitó.
+    * El tamaño de la searchbar se achica demasiado en pantallas pequeñas. Es utilizable, pero rompe la estética de la app.
+    * En la vista de detalle de producto, la reorganización de las dos columnas a una sola desacomoda el órden de los datos. Me hubiese gustado gestionarlo mejor, pero por falta de tiempo se me imposibilitó.
  - Mejorar el formato de la moneda. No logré acomodar los decimales como se muestra en las vistas de ejemplo del proyecto.
- - Mejorar el SEO de forma más completa.
+ - Mejorar el SEO de forma más completa. Agregar enfoque en openGraph para social media.
  - Solucionar error del body. Tiene mayor tamaño que los demás componentes.
  
