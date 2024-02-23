@@ -1,6 +1,8 @@
 @import "../../../../styles/sass/globals.scss";
 .itemLocation {
-    span {
+    padding-top: 16px;
+    @include setHeight($height:180px);
+    h3 {
         @include defaultFormat($fontSize: $fontSizeXXS, $textColor: $bgGray);
     }
     margin: 0 auto;

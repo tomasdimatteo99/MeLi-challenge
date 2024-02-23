@@ -74,7 +74,6 @@ const getItemsByQuery = async(req, res) => {
     }
 }
 
-
 module.exports = {
     getItemById,
     getItemsByQuery

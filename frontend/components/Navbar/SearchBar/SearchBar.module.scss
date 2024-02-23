@@ -3,8 +3,8 @@
 .formStyle{
     @include flexRow($alingItems: center);
     .inputStyle{
-        @include setHeight(6vh);
-        @include setWidth(55vw);
+        @include setHeight(45px);
+        @include setWidth(70vw);
         @include defaultFormat(
             $fontSize: $fontSizeM,
             $textColor: $bgGray
@@ -15,8 +15,8 @@
         border-radius: 4px 0 0 4px;
     }
     .buttonStyle{
-        @include setHeight(6vh);
-        @include setWidth(6vh);
+        @include setHeight(45px);
+        @include setWidth(45px);
         background-color: $bgLightGray;
         border: none;
         border-radius: 0 4px 4px 0;
@@ -27,8 +27,8 @@
         }
 
         .icoSize{
-            @include setHeight(1.5rem);
-            @include setWidth(2rem);
+            @include setHeight(25px);
+            @include setWidth(25px);
         }
         
     }

@@ -22,7 +22,7 @@ export default function ItemCard(props) {
               amount={item.price.amount}
               title={item.title}
             />
-            <ItemLocation/>
+            <ItemLocation id={item.id}/>
         </Link>
       ))}
     </div>

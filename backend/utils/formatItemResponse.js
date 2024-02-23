@@ -29,6 +29,7 @@ function formatResponseById(res){
         condition: translateCondition(res.condition),
         free_shipping: res.shipping.free_shipping,
         sold_quantity: res.sold_quantity || 0 ,
+        category_id: res.category_id,
     }
     return response;
 }

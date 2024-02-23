@@ -1,9 +1,11 @@
+import { getLocation } from "@/app/api/getLocation";
 import style from "./ItemLocation.module.scss";
 
-export default function ItemLocation() {
+export default async function ItemLocation(prop) {
+  const location = await getLocation(prop.id);
   return (
     <div className={style.itemLocation}>
-        <span>Capital Federal</span>
+        <h3>{location.location}</h3>
     </div>
   );
 }
