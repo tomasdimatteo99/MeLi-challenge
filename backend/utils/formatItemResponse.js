@@ -10,14 +10,11 @@ function translateCondition(condition){
     }
 }
 
-<<<<<<< HEAD
-=======
 function countDecimals( amount ) {
     const decimalPart = amount.toString().split('.')[1];
     return decimalPart ? decimalPart.length : 0;
 }
 
->>>>>>> develop
 //res = responseItem.data
 function formatResponseById(res){
     const response = {
@@ -26,21 +23,13 @@ function formatResponseById(res){
         price: {
             currency: res.currency_id,
             amount: res.price,
-<<<<<<< HEAD
-            //Mejorable con un split del price con un ".".
-            decimals:2
-=======
             decimals: countDecimals(res.price)
->>>>>>> develop
         },
         picture: res.pictures[0].url || res.thumbnail,
         condition: translateCondition(res.condition),
         free_shipping: res.shipping.free_shipping,
         sold_quantity: res.sold_quantity || 0 ,
-<<<<<<< HEAD
-=======
         category_id: res.category_id,
->>>>>>> develop
     }
     return response;
 }
@@ -53,12 +42,7 @@ function formatResponseByQuery(res){
         price: {
             currency: item.currency_id,
             amount: item.price,
-<<<<<<< HEAD
-            //Mejorable con un split del price con un ".".
-            decimals:2
-=======
             decimals: countDecimals(item.price)
->>>>>>> develop
         },
         picture: item.thumbnail,
         condition: translateCondition(item.condition),
