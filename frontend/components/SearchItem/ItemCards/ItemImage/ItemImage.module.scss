@@ -1,0 +1,13 @@
+@import "../../../../styles/sass/globals.scss";
+
+.itemImg{
+    @include setDimension($width:180px, $height:180px);
+    margin-right: 16px;
+    position: relative;
+
+    .ImageStyle{
+        border: 0px;
+        border-radius: 4px;
+    }
+    
+}

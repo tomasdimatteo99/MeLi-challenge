@@ -34,7 +34,11 @@ const getItemById = async(req, res) => {
         res.json(result)
     } catch(err){
         //Error 400 - Bad request
+<<<<<<< HEAD
         res.status(400).json({err: err.message});
+=======
+        res.status(404).json({err: err.message});
+>>>>>>> develop
     }
 }
 
@@ -70,11 +74,18 @@ const getItemsByQuery = async(req, res) => {
         res.json(result)
     } catch(err){
         //Error 400 - Bad request
+<<<<<<< HEAD
         res.status(400).json({error: err.message});
     }
 }
 
 
+=======
+        res.status(404).json({error: err.message});
+    }
+}
+
+>>>>>>> develop
 module.exports = {
     getItemById,
     getItemsByQuery

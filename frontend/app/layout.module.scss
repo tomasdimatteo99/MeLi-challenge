@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import "../styles/sass/globals.scss";
+
+.bodyReset{
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Nunito", sans-serif;
+    }
+    body{
+        @include container($width: 100vw);
+        background: $bgLightGray;
+    }
+}

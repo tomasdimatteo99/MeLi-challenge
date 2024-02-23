@@ -1,0 +1,10 @@
+@import '../../../styles/sass/globals.scss';
+
+.itemDetailImgContainer{
+    @include setDimension($width:680px, $height:680px);
+    position: relative;
+    .ImageStyle{
+        border: 0px;
+        border-radius: 4px;
+    }
+}

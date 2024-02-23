@@ -1,2 +1,13 @@
+<<<<<<< HEAD
 */node_modules
 .env
+=======
+# dependencies
+/*/node_modules
+
+# next.js
+/frontend/.next
+
+#local .env
+/backend/.env
+>>>>>>> develop
