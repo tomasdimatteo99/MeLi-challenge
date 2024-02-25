@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar should render the component correctly 1`] = `
+<div>
+  <nav
+    class="navbarContainer"
+  >
+    <div
+      class="contentContainer"
+    >
+      <div
+        class="logoContainer"
+      >
+        <div>
+          <a
+            href="/"
+          >
+            <div
+              class="imgContainer"
+            >
+              <img
+                alt="Logo de Mercado Libre"
+                data-nimg="fill"
+                decoding="async"
+                loading="lazy"
+                sizes="100vw"
+                src="/_next/image?url=%2FlogoML.png&w=3840&q=75"
+                srcset="/_next/image?url=%2FlogoML.png&w=640&q=75 640w, /_next/image?url=%2FlogoML.png&w=750&q=75 750w, /_next/image?url=%2FlogoML.png&w=828&q=75 828w, /_next/image?url=%2FlogoML.png&w=1080&q=75 1080w, /_next/image?url=%2FlogoML.png&w=1200&q=75 1200w, /_next/image?url=%2FlogoML.png&w=1920&q=75 1920w, /_next/image?url=%2FlogoML.png&w=2048&q=75 2048w, /_next/image?url=%2FlogoML.png&w=3840&q=75 3840w"
+                style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="searchBarContainer"
+      >
+        <form
+          class="formStyle"
+        >
+          <input
+            class="inputStyle"
+            placeholder="Nunca dejes de buscar"
+            type="text"
+            value=""
+          />
+          <button
+            class="buttonStyle"
+            name="navButton"
+          >
+            <svg
+              class="icoSize"
+              fill="currentColor"
+              height="1em"
+              id="search"
+              stroke="currentColor"
+              stroke-width="0"
+              version="1.1"
+              viewBox="0 0 24 24"
+              width="1em"
+              x="0px"
+              xmlns="http://www.w3.org/2000/svg"
+              y="0px"
+            >
+              <g>
+                <path
+                  d="M20.031,20.79c0.46,0.46,1.17-0.25,0.71-0.7l-3.75-3.76c1.27-1.41,2.04-3.27,2.04-5.31
+		c0-4.39-3.57-7.96-7.96-7.96s-7.96,3.57-7.96,7.96c0,4.39,3.57,7.96,7.96,7.96c1.98,0,3.81-0.73,5.21-1.94L20.031,20.79z
+		 M4.11,11.02c0-3.84,3.13-6.96,6.96-6.96c3.84,0,6.96,3.12,6.96,6.96c0,3.84-3.12,6.96-6.96,6.96C7.24,17.98,4.11,14.86,4.11,11.02
+		z"
+                />
+              </g>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+`;

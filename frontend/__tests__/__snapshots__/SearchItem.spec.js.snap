@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchItem should render the component correctly 1`] = `
+<div>
+  <section
+    class="itemsContainer"
+  >
+    <div
+      class="categoryContainer"
+    >
+      <span>
+        <span>
+          Celulares y Teléfonos
+           
+           &gt; 
+        </span>
+      </span>
+      <span>
+        <span
+          class="lastCategorySpan"
+        >
+          Celulares y Smartphones
+        </span>
+      </span>
+    </div>
+    <div
+      class="itemCardContainer"
+    >
+      <a
+        class="itemCard"
+        href="/items/MLA1397418693"
+      >
+        <div
+          class="itemImg"
+        >
+          <img
+            alt="Apple iPhone SE Se (3ª Generación, 64 Gb) - Azul Medianoche - Distribuidor Autorizado"
+            class="ImageStyle"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=3840&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=640&q=75 640w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=750&q=75 750w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=828&q=75 828w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=1080&q=75 1080w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=1200&q=75 1200w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=1920&q=75 1920w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=2048&q=75 2048w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+          />
+        </div>
+        <div
+          class="itemData"
+        >
+          <div
+            class="priceShippingContainer"
+          >
+            <span>
+              $ 633.598,80
+            </span>
+            <svg
+              class="freeShipping"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 32 32"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 0 6 L 0 8 L 19 8 L 19 23 L 12.84375 23 C 12.398438 21.28125 10.851563 20 9 20 C 7.148438 20 5.601563 21.28125 5.15625 23 L 4 23 L 4 18 L 2 18 L 2 25 L 5.15625 25 C 5.601563 26.71875 7.148438 28 9 28 C 10.851563 28 12.398438 26.71875 12.84375 25 L 21.15625 25 C 21.601563 26.71875 23.148438 28 25 28 C 26.851563 28 28.398438 26.71875 28.84375 25 L 32 25 L 32 16.84375 L 31.9375 16.6875 L 29.9375 10.6875 L 29.71875 10 L 21 10 L 21 6 Z M 1 10 L 1 12 L 10 12 L 10 10 Z M 21 12 L 28.28125 12 L 30 17.125 L 30 23 L 28.84375 23 C 28.398438 21.28125 26.851563 20 25 20 C 23.148438 20 21.601563 21.28125 21.15625 23 L 21 23 Z M 2 14 L 2 16 L 8 16 L 8 14 Z M 9 22 C 10.117188 22 11 22.882813 11 24 C 11 25.117188 10.117188 26 9 26 C 7.882813 26 7 25.117188 7 24 C 7 22.882813 7.882813 22 9 22 Z M 25 22 C 26.117188 22 27 22.882813 27 24 C 27 25.117188 26.117188 26 25 26 C 23.882813 26 23 25.117188 23 24 C 23 22.882813 23.882813 22 25 22 Z"
+              />
+            </svg>
+          </div>
+          <h2>
+            Apple iPhone SE Se (3ª Generación, 64 Gb) - Azul Medianoche - Distribuidor Autorizado
+          </h2>
+        </div>
+        <div
+          data-testid="mocked-item-location"
+        />
+      </a>
+      <a
+        class="itemCard"
+        href="/items/MLA1363433735"
+      >
+        <div
+          class="itemImg"
+        >
+          <img
+            alt="Apple iPhone 13 (128 Gb) - Rosa"
+            class="ImageStyle"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=3840&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=640&q=75 640w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=750&q=75 750w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=828&q=75 828w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=1080&q=75 1080w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=1200&q=75 1200w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=1920&q=75 1920w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=2048&q=75 2048w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+          />
+        </div>
+        <div
+          class="itemData"
+        >
+          <div
+            class="priceShippingContainer"
+          >
+            <span>
+              $ 978.999,00
+            </span>
+            <svg
+              class="freeShipping"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 32 32"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 0 6 L 0 8 L 19 8 L 19 23 L 12.84375 23 C 12.398438 21.28125 10.851563 20 9 20 C 7.148438 20 5.601563 21.28125 5.15625 23 L 4 23 L 4 18 L 2 18 L 2 25 L 5.15625 25 C 5.601563 26.71875 7.148438 28 9 28 C 10.851563 28 12.398438 26.71875 12.84375 25 L 21.15625 25 C 21.601563 26.71875 23.148438 28 25 28 C 26.851563 28 28.398438 26.71875 28.84375 25 L 32 25 L 32 16.84375 L 31.9375 16.6875 L 29.9375 10.6875 L 29.71875 10 L 21 10 L 21 6 Z M 1 10 L 1 12 L 10 12 L 10 10 Z M 21 12 L 28.28125 12 L 30 17.125 L 30 23 L 28.84375 23 C 28.398438 21.28125 26.851563 20 25 20 C 23.148438 20 21.601563 21.28125 21.15625 23 L 21 23 Z M 2 14 L 2 16 L 8 16 L 8 14 Z M 9 22 C 10.117188 22 11 22.882813 11 24 C 11 25.117188 10.117188 26 9 26 C 7.882813 26 7 25.117188 7 24 C 7 22.882813 7.882813 22 9 22 Z M 25 22 C 26.117188 22 27 22.882813 27 24 C 27 25.117188 26.117188 26 25 26 C 23.882813 26 23 25.117188 23 24 C 23 22.882813 23.882813 22 25 22 Z"
+              />
+            </svg>
+          </div>
+          <h2>
+            Apple iPhone 13 (128 Gb) - Rosa
+          </h2>
+        </div>
+        <div
+          data-testid="mocked-item-location"
+        />
+      </a>
+      <a
+        class="itemCard"
+        href="/items/MLA1394136621"
+      >
+        <div
+          class="itemImg"
+        >
+          <img
+            alt="Apple iPhone 15 (128 Gb) - Negro"
+            class="ImageStyle"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=3840&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=640&q=75 640w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=750&q=75 750w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=828&q=75 828w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=1080&q=75 1080w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=1200&q=75 1200w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=1920&q=75 1920w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=2048&q=75 2048w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+          />
+        </div>
+        <div
+          class="itemData"
+        >
+          <div
+            class="priceShippingContainer"
+          >
+            <span>
+              $ 1.270.000,00
+            </span>
+            <svg
+              class="freeShipping"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 32 32"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 0 6 L 0 8 L 19 8 L 19 23 L 12.84375 23 C 12.398438 21.28125 10.851563 20 9 20 C 7.148438 20 5.601563 21.28125 5.15625 23 L 4 23 L 4 18 L 2 18 L 2 25 L 5.15625 25 C 5.601563 26.71875 7.148438 28 9 28 C 10.851563 28 12.398438 26.71875 12.84375 25 L 21.15625 25 C 21.601563 26.71875 23.148438 28 25 28 C 26.851563 28 28.398438 26.71875 28.84375 25 L 32 25 L 32 16.84375 L 31.9375 16.6875 L 29.9375 10.6875 L 29.71875 10 L 21 10 L 21 6 Z M 1 10 L 1 12 L 10 12 L 10 10 Z M 21 12 L 28.28125 12 L 30 17.125 L 30 23 L 28.84375 23 C 28.398438 21.28125 26.851563 20 25 20 C 23.148438 20 21.601563 21.28125 21.15625 23 L 21 23 Z M 2 14 L 2 16 L 8 16 L 8 14 Z M 9 22 C 10.117188 22 11 22.882813 11 24 C 11 25.117188 10.117188 26 9 26 C 7.882813 26 7 25.117188 7 24 C 7 22.882813 7.882813 22 9 22 Z M 25 22 C 26.117188 22 27 22.882813 27 24 C 27 25.117188 26.117188 26 25 26 C 23.882813 26 23 25.117188 23 24 C 23 22.882813 23.882813 22 25 22 Z"
+              />
+            </svg>
+          </div>
+          <h2>
+            Apple iPhone 15 (128 Gb) - Negro
+          </h2>
+        </div>
+        <div
+          data-testid="mocked-item-location"
+        />
+      </a>
+      <a
+        class="itemCard"
+        href="/items/MLA1357319640"
+      >
+        <div
+          class="itemImg"
+        >
+          <img
+            alt="Apple iPhone 14 (128 Gb) - Medianoche"
+            class="ImageStyle"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=3840&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=640&q=75 640w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=750&q=75 750w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=828&q=75 828w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=1080&q=75 1080w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=1200&q=75 1200w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=1920&q=75 1920w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=2048&q=75 2048w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+          />
+        </div>
+        <div
+          class="itemData"
+        >
+          <div
+            class="priceShippingContainer"
+          >
+            <span>
+              $ 1.125.742,00
+            </span>
+            <svg
+              class="freeShipping"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 32 32"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 0 6 L 0 8 L 19 8 L 19 23 L 12.84375 23 C 12.398438 21.28125 10.851563 20 9 20 C 7.148438 20 5.601563 21.28125 5.15625 23 L 4 23 L 4 18 L 2 18 L 2 25 L 5.15625 25 C 5.601563 26.71875 7.148438 28 9 28 C 10.851563 28 12.398438 26.71875 12.84375 25 L 21.15625 25 C 21.601563 26.71875 23.148438 28 25 28 C 26.851563 28 28.398438 26.71875 28.84375 25 L 32 25 L 32 16.84375 L 31.9375 16.6875 L 29.9375 10.6875 L 29.71875 10 L 21 10 L 21 6 Z M 1 10 L 1 12 L 10 12 L 10 10 Z M 21 12 L 28.28125 12 L 30 17.125 L 30 23 L 28.84375 23 C 28.398438 21.28125 26.851563 20 25 20 C 23.148438 20 21.601563 21.28125 21.15625 23 L 21 23 Z M 2 14 L 2 16 L 8 16 L 8 14 Z M 9 22 C 10.117188 22 11 22.882813 11 24 C 11 25.117188 10.117188 26 9 26 C 7.882813 26 7 25.117188 7 24 C 7 22.882813 7.882813 22 9 22 Z M 25 22 C 26.117188 22 27 22.882813 27 24 C 27 25.117188 26.117188 26 25 26 C 23.882813 26 23 25.117188 23 24 C 23 22.882813 23.882813 22 25 22 Z"
+              />
+            </svg>
+          </div>
+          <h2>
+            Apple iPhone 14 (128 Gb) - Medianoche
+          </h2>
+        </div>
+        <div
+          data-testid="mocked-item-location"
+        />
+      </a>
+    </div>
+  </section>
+</div>
+`;

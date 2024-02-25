@@ -23,8 +23,6 @@ class Server{
         this.app.use( cors() );
         //Lectura y parseo a JSON
         this.app.use( express.json() );
-        //Tomamos el directorio publico.
-        this.app.use( express.static('public') );
     }
 
     routes(){

@@ -21,6 +21,7 @@ export default function ItemCard(props) {
               currency={item.price.currency}
               amount={item.price.amount}
               title={item.title}
+              shipping={item.free_shipping}
             />
             <ItemLocation id={item.id}/>
         </Link>

@@ -1,4 +1,4 @@
-import { getLocation } from "@/app/api/getLocation";
+import { getLocation } from "@/app/utils/getLocation";
 import style from "./ItemLocation.module.scss";
 
 export default async function ItemLocation(prop) {

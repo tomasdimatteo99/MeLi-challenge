@@ -2,7 +2,7 @@ import SearchBar from "./SearchBar/SearchBar"
 import Logo from "./Logo/Logo";
 import style from './Navbar.module.scss';
 
-export const Navbar = async() => {
+export const Navbar = () => {
 
   return (
     <nav className={style.navbarContainer}>

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-*/node_modules
-.env
-=======
 # dependencies
 /*/node_modules
 
@@ -10,4 +6,6 @@
 
 #local .env
 /backend/.env
->>>>>>> develop
+
+#testing
+/*/coverage
