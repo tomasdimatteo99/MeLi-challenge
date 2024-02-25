@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemDetail should render the component correctly 1`] = `
+<div>
+  <div
+    class="divContainer"
+  >
+    <div
+      class="categoryContainer"
+    >
+      <span>
+        <span>
+          Celulares y Teléfonos
+           
+           &gt; 
+        </span>
+      </span>
+      <span>
+        <span
+          class="lastCategorySpan"
+        >
+          Celulares y Smartphones
+        </span>
+      </span>
+    </div>
+    <section
+      class="itemDetailContainer"
+    >
+      <div
+        class="leftColumn"
+      >
+        <div
+          class="itemDetailImgContainer"
+        >
+          <img
+            alt="Apple iPhone SE Se (3ª Generación, 64 Gb) - Azul Medianoche - Distribuidor Autorizado"
+            class="ImageStyle"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-O.jpg&w=3840&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-O.jpg&w=640&q=75 640w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-O.jpg&w=750&q=75 750w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-O.jpg&w=828&q=75 828w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-O.jpg&w=1080&q=75 1080w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-O.jpg&w=1200&q=75 1200w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-O.jpg&w=1920&q=75 1920w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-O.jpg&w=2048&q=75 2048w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-O.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+          />
+        </div>
+        <div
+          class="descriptionStyle"
+        >
+          <div
+            class="descriptionTitleContainer"
+          >
+            <span>
+              Descripción del producto
+            </span>
+          </div>
+          <div
+            class="descriptionContainer"
+          >
+            <p>
+              Chip A15 Bionic superrápido. Una increíble duración de batería y una cámara que es una superestrella. Y además, el vidrio más resistente en un smartphone y botón de inicio con la seguridad de Touch ID.
+
+Aviso legal
+
+(1) El tamaño de la pantalla se mide en diagonal.
+(2) La duración de la batería varía según el uso y la configuración.
+(3) El iPhone SE (tercera generación) tiene una clasificación IP67 según la norma IEC 60529 (hasta 30 minutos a una profundidad máxima de 1 metro). La resistencia a las salpicaduras, al agua y al polvo no es una condición permanente, y podría disminuir como consecuencia del uso normal. No intentes cargar un iPhone mojado; consulta el manual del usuario para ver las instrucciones de limpieza y secado. La garantía no cubre daños producidos por líquidos.
+(4) Algunas funcionalidades podrían no estar disponibles en todos los países o áreas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="rightColumn"
+      >
+        <div
+          class="dataContainer"
+        >
+          <div
+            class="conditionContainer"
+          >
+            <h3>
+              Nuevo
+            </h3>
+          </div>
+          <div
+            class="titleContainer"
+          >
+            <h1>
+              Apple iPhone SE Se (3ª Generación, 64 Gb) - Azul Medianoche - Distribuidor Autorizado
+            </h1>
+          </div>
+          <div
+            class="amountContainer"
+          >
+            <h2>
+              $ 633.598,80
+            </h2>
+          </div>
+        </div>
+        <div
+          class="buttonStyle"
+        >
+          <button>
+            Comprar
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

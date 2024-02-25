@@ -2,62 +2,71 @@
 
 # Mercado Libre - Frontend Challenge.
 
-El challenge consiste en crear una aplicación web la cual consta de tres vistas navegables:
+El challenge consiste en crear una aplicación web con las siguientes vistas:
 
-1. Caja de búsqueda
-2. Resultado de búsqueda
-3. Detalle de producto.
+1. Caja de búsqueda:
+    * Permite al usuario ingresar el producto que desea buscar en un campo de búsqueda y enviar el formulario.
+    * Al enviar el formulario o hacer clic en el botón de búsqueda, el usuario será dirigido a la siguiente vista.
+2. Resultado de búsqueda:
+    * Esta vista muestra los resultados relacionados con el producto buscado, incluyendo hasta 4 productos con sus características.
+    * Cada producto es clickeable, lo que lleva al usuario a la vista de detalle del producto.
+3. Detalle de producto:
+    * Esta vista muestra la información detallada sobre un producto en específico.
 
-En la aplicación el usuario es capaz de ingresar un producto deseado en la caja de búsqueda y enviar el formulario. Luego, la aplicación navegará a la vista de resultados, visualizando 4 productos. Desde allí el usuario también será capaz de clickear en los productos, lo que provocará que la aplicación navegue a la vista que muestra el detalle y descripción del producto clickeado.
+ - Cada vista dispone de una navbar, que contiene una barra de búsqueda.
+ - Se puede acceder a cualquiera de las vistas a través de la URL. Ya que la aplicación es capaz de detectar los parámetros especificados.
 
 ## ⚙️ Tecnologías aplicadas:
 
 * Backend:
     - Node.js (v20.10.0)
-    - Express (v4.18.2), framework de Node.js
+    - Express (v4.18.2) - Framework de Node.js
     - CORS (v2.8.5)
     - DotEnv (v16.4.4)
 
 * Frontend:
     - React.js (v18)
-    - Next.js (v14.1.0), framework de React.js SSR
+    - Next.js (v14.1.0) - Framework de React.js para SSR (Server-Side Rendering)
     - Enrutamiento de Next.js App Router
     - JavaScript para el tipado
-    - SASS (v1.71.0), procesador de CSS.
+    - SASS (v1.71.0) - Procesador de CSS.
     - Eslint (v8)
 
 * Ambos:
-    - Axios (1.6.7), biblioteca de JS.
+    - Axios (1.6.7) - Biblioteca de JavaScript para solicitudes HTTP.
+
+* Testing:
+    - React Testing Library
+    - Jest
 
 
 ## 💻 Ejecución de la aplicación de forma local:
 
 * Ejecutar el backend:
     1. Desplazarse a la carpeta del backend:
-        - Ejecutar 'cd ./backend' en la carpeta raíz.
+        `cd ./backend`
     2. Instalar dependencias:
-        - Ejecutar 'npm install' en la carpeta backend.
+        `npm install`
     3. Correr el backend:
-        - Ejecutar 'npm run dev' en la carpeta backend.
-    * *Atención*: correrá por defecto en 'http://localhost:8080/'. En caso de necesitar correrlo
-    en otro puerto deberá crear un archivo .env y dentro colocar la variable de entorno:
-    'PORT=(puerto deseado)' 
+        `npm run dev`
+    * *Atención*: correrá por defecto en 'http://localhost:8080/'. Si necesitas cambiar el puerto, crea un archivo .env y dentro colocar la variable de entorno: 'PORT=(puerto deseado)' 
 
 * Ejecutar el frontend:
     1. Desplazarse a la carpeta del frontend:
-        - Ejecutar 'cd ./frontend' en la carpeta raíz.
-        - O ejecutar 'cd ../frontend' en la carpeta backend.
+        `cd ./frontend`
+        - O si estás en la carpeta backend:
+        `cd ../frontend`
     2. Instalar dependencias:
-        - Ejecutar 'npm install' en la carpeta frontend.
+        `npm install`
     3. Correr el frontend:
-        - Ejecutar 'npm run dev' en la carpeta frontend.
+        `npm run dev`
     * *Atención*: correrá por defecto en 'http://localhost:3000/'.
 
 *Es necesario ejecutar ambos para que la aplicación funcione correctamente.*
 
 * Para visualizar la aplicación colocar la URL 'http://localhost:3000/' en su navegador.
 
-## 🧑‍💻 Detalle de vistas.
+## 🧑‍💻 Detalle de vistas:
 1. Caja de búsqueda (Inicio) - *URL* 'url/'.
     Contiene:
     - Navbar con un input de búsqueda (barra de búsqueda). La cuál tendrán en común todas las vistas.
@@ -90,51 +99,50 @@ La carpeta raiz contiene dos carpetas principales del proyecto:
 ### - Backend:
 #### Node.js + Express.
 - Contiene 2 endpoints principales:
-    1. getItemsByQuery - apunta a: "/api/items?q=:query"
-        - Función que recibe como parámetro una query, que es lo que el usuario ingresa en el input. En base al query param realiza un llamado a la api, de acuerdo al endpoint especificado:
+    1. getItemsByQuery - endpoint: "/api/items?q=:query"
+        * Obtiene resultados de búsqueda en base a la consulta del usuario.
+        - Recibe como parámetro una query, información ingresada en el input. Realiza un llamado a la api, de acuerdo al endpoint especificado:
         https://api.mercadolibre.com/sites/MLA/search?q=:query
-        Recibe una respuesta de la API con los resultados de la búsqueda, utilizando Axios. Lo estructura y le establece formato JSON de acuerdo a los requerimientos establecidos y será devuelto para luego ser utilizado en el frontend, específicamente en la vista 2.
+        - Estructura la respuesta y le establece formato JSON de acuerdo a los requerimientos establecidos. Será devuelto formateado para luego ser utilizado en el frontend, específicamente en la vista 2.
 
     2. getItemById - apunta a: "/api/items/:id"
-        - Función que recibe como parámetro un ID, el cual corresponde al producto clickeado. En base al ID param realiza un llamado a la api, de acuerdo a los endpoints especificados:
+        * Obtiene detalles de un producto específico.
+        - Recibe como parámetro un ID, el cual corresponde al producto clickeado. Realiza un llamado a la api, de acuerdo a los endpoints especificados:
         https://api.mercadolibre.com/items/:id
         https://api.mercadolibre.com/items/:id/description
-        Recibe una respuesta de la API con el detalle y la descripción del producto, utilizando un Promise All en conjunto con Axios. Las estructura en una sola y le establece formato JSON de acuerdo a los requerimientos establecidos y será devuelto para luego ser utilizado en el frontend, específicamente en la vista 3.
+        - Estructura las respuestas en una sola y le establece formato JSON de acuerdo a los requerimientos establecidos. Será devuelto formateado para luego ser utilizado en el frontend, específicamente en la vista 3.
 
 #### Next.js
-- Por falta de tiempo, creé 2 getters extras con Next.js. Los cuales deberán ser movidos al backend, aplicándolos con Node.js + Express.
-    1. getCategories
-        - Función que recibe como parámetro el ID del producto buscado o clickeado. En base al ID param realiza un llamado a la api:
-        https://api.mercadolibre.com/categories/:id
-        Recibe respuestas de la API con las categorías, utilizando Axios. Lo estructura y le establece formato JSON para ser fácilmente utilizado en el frontend, en las vistas 2 y 3.
+1. getCategories
+    * Obtiene las categorías de un producto.
+    - Recibe como parámetro el ID del producto buscado o clickeado. Realiza un llamado a la api:
+    https://api.mercadolibre.com/categories/:id
+    - Estructura la respuesta y le establece formato JSON para ser fácilmente utilizado en el frontend, en las vistas 2 y 3.
 
-    2. getLocation
-        - Función que recibe como parámetro un ID, el cual corresponde al producto buscado. En base al ID param realiza un llamado a la api:
-        https://api.mercadolibre.com/items/:id
-        Recibe una respuesta de la API con el detalle del producto, del cual extraeremos la localidad del vendedor, utilizando Axios. Lo estructura y le establece formato JSON para ser fácilmente utilizado en el frontend, específicamente en la vista 2. Se repetirá por cada producto renderizado.
+2. getLocation
+    * Obtiene la ubicación del vendedor de un producto.
+    - Recibe como parámetro el ID del producto buscado. Realiza un llamado a la api:
+    https://api.mercadolibre.com/items/:id
+    Recibe una respuesta de la API con el detalle del producto, del cual extraeremos la localidad del vendedor. Estructura la respuesta y le establece formato JSON para ser fácilmente utilizado en el frontend, en la vista 2. Se repetirá por cada producto renderizado.
 
 ### - Frontend:
 #### Next.js SSR (App Router) + SASS
 Estructura:
-- App y components: desarrollo de vistas complementadas con componentes modularizados y algunos reutilizables, enrutadas en base a App Router. Cada vista principal contedrá su metadata que se encargará de generar el SEO correspondiente de la página.
-- Components: cada componente y vista contendrá individualmente su módulo de SASS. Lo que permitirá una mayor legibilidad en el código de estilos, una mejor organización, escalabilidad y responsive.
-- Utils: se crean esqueletos de funciones de estilos (mixins). Esto permite reutilizar el código generado en CSS, ahorrar tiempo al momento de codear, una mayor organización y escalabilidad.
-- Variables: se crean variables las cuales contienen los colores, fuentes y media queries requeridos. Esto permite aplicarlos facilmente, reutilización, escalabilidad y responsive.
+- App y componentes: vistas y componentes modulares y reutilizables, enrutados con App Router. Cada vista principal contendrá su metadata que se encargará de generar el SEO correspondiente de la página.
+- Estilos: cada vista y componente contiene su módulo de SASS. Lo que permitirá una mayor legibilidad en el código de estilos, una mejor organización, escalabilidad y responsive. 
+- Utilidades para SASS: Se crean esqueletos de funciones de estilos (mixins). Esto permite reutilizar el código generado en CSS, ahorrar tiempo al momento de codear, una mayor organización y escalabilidad. También se crean variables las cuales contienen los colores, fuentes y media queries requeridos. Esto permite aplicarlos facilmente, reutilización, escalabilidad y responsive.
 
 ## 💡 Posibles mejoras:
 ### General:
- - Mejorar la estructura de las carpetas. No me convence del todo tener dividido en frontend y backend. Por falta de conocimiento lo organicé de esta manera. Me gustaría encontrar una forma más eficiente de hacerlo.
  - Simplificar la ejecución del mismo en un solo comando.
  - Utilizar únicamente un package.json.
 ### Backend:
- - Mover las funciones getCategories y getLocation del frontend al backend.
- - Testing. No logré realizarlo correctamente por falta de conocimiento de testing en el backend. La falta de tiempo me imposiblitó buscar más información sobre ello.
+ - Mover las funciones 'getCategories' y 'getLocation' del frontend al backend, utilizando Nodejs + Express.
+ - Testing: no fui capaz de finalizar a causa de faltas de conocimientos sobre el tema. Con más de tiempo, me hubiese gustado indagar más sobre el tema y realizarlos.
 ### Frontend:
  - Crear variables de URL para darle mayor prolijidad y escalabilidad al código.
- - Responsive: es muy básico, se adecúa a los tamaños de las pantallas sin que nada se salga de la vista del usuario. Es necesario que mejor estéticamente, debido a que:
+ - Responsive: es muy básico, se adecúa a los tamaños de las pantallas sin que nada se salga de la vista del usuario. Es necesario mejorarlo estéticamente, debido a que:
     * El tamaño de la searchbar se achica demasiado en pantallas pequeñas. Es utilizable, pero rompe la estética de la app.
-    * En la vista de detalle de producto, la reorganización de las dos columnas a una sola desacomoda el órden de los datos. Me hubiese gustado gestionarlo mejor, pero por falta de tiempo se me imposibilitó.
+    * En la vista de detalle de producto, la reorganización de las dos columnas a una sola desacomoda el órden de los datos. Con más tiempo, me hubiese gustado gestionarlo mejor.
  - Mejorar el formato de la moneda. No logré acomodar los decimales como se muestra en las vistas de ejemplo del proyecto.
  - Mejorar el SEO de forma más completa. Agregar enfoque en openGraph para social media.
- - Solucionar error del body. Tiene mayor tamaño que los demás componentes.
- 

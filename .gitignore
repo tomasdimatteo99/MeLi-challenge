@@ -6,3 +6,6 @@
 
 #local .env
 /backend/.env
+
+#testing
+/*/coverage

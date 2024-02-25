@@ -8,7 +8,7 @@ const getLocation = async( id ) =>{
       const location = response.data.seller_address.state.name;
       return {location: location};
   }catch(err){
-      //notFound()
+      notFound()
   }
 }
 

@@ -4,10 +4,10 @@ import ItemDetailDescription from "./ItemDetailDescription/ItemDetailDescription
 import ItemDetailImage from "./ItemDetailImage/ItemDetailImage";
 import ItemCategory from "../ItemCategory/ItemCategory";
 import style from "./ItemDetail.module.scss"
-import { getCategories } from "../../app/api/getCategories";
+import { getCategories } from "../../app/utils/getCategories";
 
-export default async function ItemDetail( item ) {
-  const id = item.item.items.category_id;
+export default async function ItemDetail( props ) {
+  const id = props.item.category_id;
   const categories = await getCategories( id );
   return (
     <div className={style.divContainer}>
@@ -15,20 +15,20 @@ export default async function ItemDetail( item ) {
       <section className={style.itemDetailContainer}>
         <div className={style.leftColumn}>
           <ItemDetailImage
-            picture={item.item.items.picture}
-            title={item.item.items.title}
+            picture={props.item.picture}
+            title={props.item.title}
           />
           <ItemDetailDescription
-            description={item.item.description}
+            description={props.description}
           />
         </div>
         <div className={style.rightColumn}>
           <ItemDetailData
-            condition={item.item.items.condition}
-            soldQuantity={item.item.items.sold_quantity}
-            title={item.item.items.title}
-            currency={item.item.items.price.currency}
-            amount={item.item.items.price.amount}
+            condition={props.item.condition}
+            soldQuantity={props.item.sold_quantity}
+            title={props.item.title}
+            currency={props.item.price.currency}
+            amount={props.item.price.amount}
           />
           <BuyButton/>
         </div>

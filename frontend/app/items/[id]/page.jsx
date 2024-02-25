@@ -1,5 +1,5 @@
 import ItemDetail from '@/components/ItemDetail/ItemDetail';
-import { getItemById } from '../../api/getItemById';
+import { getItemById } from '../../utils/getItemById';
 
 export async function generateMetadata({params}) {
     const item = await getItemById( params.id );
@@ -14,11 +14,10 @@ export default async function IDPage({ params }){
     const item = await getItemById( params.id );
 
     return (
-        <section>
-            <ItemDetail
-              item={ item }
-            />
-        </section>
+        <ItemDetail
+            item={ item.items }
+            description={ item.description }
+        />
     );
 }
 

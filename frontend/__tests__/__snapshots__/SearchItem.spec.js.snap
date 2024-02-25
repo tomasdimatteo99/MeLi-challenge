@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchItem should render the component correctly 1`] = `
+<div>
+  <section
+    class="itemsContainer"
+  >
+    <div
+      class="categoryContainer"
+    >
+      <span>
+        <span>
+          Celulares y Teléfonos
+           
+           &gt; 
+        </span>
+      </span>
+      <span>
+        <span
+          class="lastCategorySpan"
+        >
+          Celulares y Smartphones
+        </span>
+      </span>
+    </div>
+    <div
+      class="itemCardContainer"
+    >
+      <a
+        class="itemCard"
+        href="/items/MLA1397418693"
+      >
+        <div
+          class="itemImg"
+        >
+          <img
+            alt="Apple iPhone SE Se (3ª Generación, 64 Gb) - Azul Medianoche - Distribuidor Autorizado"
+            class="ImageStyle"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=3840&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=640&q=75 640w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=750&q=75 750w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=828&q=75 828w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=1080&q=75 1080w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=1200&q=75 1200w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=1920&q=75 1920w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=2048&q=75 2048w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_696564-MLA52130732644_102022-I.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+          />
+        </div>
+        <div
+          class="itemData"
+        >
+          <span>
+            $ 633.598,80
+          </span>
+          <h2>
+            Apple iPhone SE Se (3ª Generación, 64 Gb) - Azul Medianoche - Distribuidor Autorizado
+          </h2>
+        </div>
+        <div
+          data-testid="mocked-item-location"
+        />
+      </a>
+      <a
+        class="itemCard"
+        href="/items/MLA1363433735"
+      >
+        <div
+          class="itemImg"
+        >
+          <img
+            alt="Apple iPhone 13 (128 Gb) - Rosa"
+            class="ImageStyle"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=3840&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=640&q=75 640w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=750&q=75 750w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=828&q=75 828w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=1080&q=75 1080w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=1200&q=75 1200w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=1920&q=75 1920w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=2048&q=75 2048w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_654080-MLA47781882564_102021-I.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+          />
+        </div>
+        <div
+          class="itemData"
+        >
+          <span>
+            $ 978.999,00
+          </span>
+          <h2>
+            Apple iPhone 13 (128 Gb) - Rosa
+          </h2>
+        </div>
+        <div
+          data-testid="mocked-item-location"
+        />
+      </a>
+      <a
+        class="itemCard"
+        href="/items/MLA1394136621"
+      >
+        <div
+          class="itemImg"
+        >
+          <img
+            alt="Apple iPhone 15 (128 Gb) - Negro"
+            class="ImageStyle"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=3840&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=640&q=75 640w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=750&q=75 750w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=828&q=75 828w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=1080&q=75 1080w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=1200&q=75 1200w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=1920&q=75 1920w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=2048&q=75 2048w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_779617-MLA71782867320_092023-I.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+          />
+        </div>
+        <div
+          class="itemData"
+        >
+          <span>
+            $ 1.270.000,00
+          </span>
+          <h2>
+            Apple iPhone 15 (128 Gb) - Negro
+          </h2>
+        </div>
+        <div
+          data-testid="mocked-item-location"
+        />
+      </a>
+      <a
+        class="itemCard"
+        href="/items/MLA1357319640"
+      >
+        <div
+          class="itemImg"
+        >
+          <img
+            alt="Apple iPhone 14 (128 Gb) - Medianoche"
+            class="ImageStyle"
+            data-nimg="fill"
+            decoding="async"
+            loading="lazy"
+            sizes="100vw"
+            src="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=3840&q=75"
+            srcset="/_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=640&q=75 640w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=750&q=75 750w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=828&q=75 828w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=1080&q=75 1080w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=1200&q=75 1200w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=1920&q=75 1920w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=2048&q=75 2048w, /_next/image?url=http%3A%2F%2Fhttp2.mlstatic.com%2FD_881016-MLM51559383738_092022-I.jpg&w=3840&q=75 3840w"
+            style="position: absolute; height: 100%; width: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; object-fit: contain; color: transparent;"
+          />
+        </div>
+        <div
+          class="itemData"
+        >
+          <span>
+            $ 1.125.742,00
+          </span>
+          <h2>
+            Apple iPhone 14 (128 Gb) - Medianoche
+          </h2>
+        </div>
+        <div
+          data-testid="mocked-item-location"
+        />
+      </a>
+    </div>
+  </section>
+</div>
+`;

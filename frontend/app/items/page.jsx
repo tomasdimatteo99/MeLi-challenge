@@ -1,5 +1,5 @@
 import SearchItem from '@/components/SearchItem/SearchItem';
-import { getItemsByQuery } from '../api/getItemsByQuery';
+import { getItemsByQuery } from '../utils/getItemsByQuery';
 
 export async function generateMetadata({searchParams}) {
     return {
@@ -14,9 +14,7 @@ export default async function SearchPage({searchParams}){
     const items = await getItemsByQuery(searchParams.search);
 
     return (
-        <section>
-            <SearchItem items={items}/>
-        </section>
+        <SearchItem items={items}/>
     );
 }
 

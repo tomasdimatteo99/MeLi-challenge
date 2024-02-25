@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ItemLocation should render the component correctly 1`] = `
+<div>
+  <div
+    class="itemLocation"
+  >
+    <h3>
+      Capital Federal
+    </h3>
+  </div>
+</div>
+`;
