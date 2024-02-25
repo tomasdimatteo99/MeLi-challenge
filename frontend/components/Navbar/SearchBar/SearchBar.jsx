@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import { CiSearch } from "react-icons/ci";
 import style from "./SearchBar.module.scss";
@@ -19,7 +18,7 @@ export default function SearchBar(){
 
   const handleSearch = (e) => {
     e.preventDefault();
-    router.push(`/items?search=${query}`);
+    window.location.href = `/items?search=${query}`;
   }
 
   const handleChange = (e) => {
@@ -35,11 +34,9 @@ export default function SearchBar(){
         onChange={handleChange}
         className={style.inputStyle}
       />
-      <Link href={`/items?search=${query}`}>
-        <button type="submit" className={style.buttonStyle}>
-          <CiSearch className={style.icoSize} />
-        </button>
-      </Link>
+      <button name="navButton" onClick={handleSearch} className={style.buttonStyle}>
+        <CiSearch className={style.icoSize} />
+      </button>
     </form>
   );
 };

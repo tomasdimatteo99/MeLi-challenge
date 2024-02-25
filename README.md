@@ -146,3 +146,4 @@ Estructura:
     * En la vista de detalle de producto, la reorganización de las dos columnas a una sola desacomoda el órden de los datos. Con más tiempo, me hubiese gustado gestionarlo mejor.
  - Mejorar el formato de la moneda. No logré acomodar los decimales como se muestra en las vistas de ejemplo del proyecto.
  - Mejorar el SEO de forma más completa. Agregar enfoque en openGraph para social media.
+ - Agregar más testing. Por ejemplo clicks en componentes.
