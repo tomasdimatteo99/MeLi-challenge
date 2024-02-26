@@ -21,12 +21,8 @@
             @include setPadding($padding: 32px);
             margin: 0 0 auto;
         }
-    
-<<<<<<< HEAD
-        @media #{mediaQuery.$md} {
-            @include container($height:100%);
-=======
         @media #{mediaQuery.$xl} {
             @include container($width:100vw ,$height:100%);
-    }   
+        }   
+    }
 }
