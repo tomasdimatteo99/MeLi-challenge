@@ -11,7 +11,7 @@ export default function SearchBar(){
   const search = searchParams?.get("search");
 
   useEffect(() => {
-    if (search) {
+    if ( search ) {
       setQuery(search);
     }
   }, [search]);

@@ -14,11 +14,6 @@ const getItemById = async(req, res) => {
             axios.get(`https://api.mercadolibre.com/items/${id}/description`)
         ])
 
-        //No funciona esta verificación - Devuelve error 404 el sistema.
-        // if( responseItem.data.id === "null" || !responseDescription.data.plain_text ){
-        //     throw new Error( 'No fueron encontrados resultados para la búsqueda proporcionada.' );
-        // }
-
         //Items
         const items = formatResponseById(responseItem.data);
         //Result
