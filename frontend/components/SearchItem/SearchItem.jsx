@@ -2,11 +2,11 @@ import style from "./SearchItem.module.scss";
 import ItemCards from "./ItemCards/ItemCards";
 import ItemCategory from "../ItemCategory/ItemCategory";
 
-export default function SearchItem( items ) {
+export default function SearchItem( props ) {
   return (
     <section className={style.itemsContainer}>
-        <ItemCategory itemsCategories={items.items.categories}/>
-        <ItemCards items={items.items.items}/>
+        <ItemCategory itemsCategories={props.categories}/>
+        <ItemCards items={props.items}/>
     </section>
   );
 }
