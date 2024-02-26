@@ -1,9 +1,4 @@
 export const searchedItems = {
-  items: {
-    author: {
-      name: "Tomas",
-      lastname: "Di Matteo",
-    },
     categories: ["Celulares y Teléfonos", "Celulares y Smartphones"],
     items: [
       {
@@ -60,5 +55,4 @@ export const searchedItems = {
         free_shipping: true,
       },
     ],
-  },
 };

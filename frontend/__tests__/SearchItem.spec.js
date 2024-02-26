@@ -8,9 +8,11 @@ jest.mock('../components/SearchItem/ItemCards/ItemLocation/ItemLocation', () => 
 
 describe("SearchItem", () => {
   it("should render the component correctly", async () => {
-    const items = searchedItems.items
+    const items = searchedItems.items;
+    const categories = searchedItems.categories;
     const SearchItemResolved = await resolvedComponent(SearchItem, {
-        items
+        items,
+        categories
     });
     const { container } = render(<SearchItemResolved/>);
     expect( container ).toMatchSnapshot();

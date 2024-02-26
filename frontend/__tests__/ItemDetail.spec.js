@@ -1,5 +1,5 @@
 import "@testing-library/jest-dom";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import ItemDetail from "@/components/ItemDetail/ItemDetail";
 import { itemDetail } from "./mocks/itemDetailMock";
 import { resolvedComponent } from "@/utils/resolvedComponent";
@@ -10,7 +10,7 @@ describe("ItemDetail", () => {
     const description = itemDetail.description;
     const ItemDetailResolved = await resolvedComponent(ItemDetail, {
       item,
-      description,
+      description
     });
     const { container } = render(<ItemDetailResolved/>);
     expect( container ).toMatchSnapshot();
