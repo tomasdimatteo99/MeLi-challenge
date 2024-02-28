@@ -17,6 +17,7 @@ export default function SearchBar(){
   }, [search]);
 
   const handleSearch = (e) => {
+    //Evita el reload de la página cuando enviamos el form.
     e.preventDefault();
     window.location.href = `/items?search=${query}`;
   }

@@ -14,8 +14,8 @@ export default function ItemCard(props) {
           className={style.itemCard}
         >
             <ItemImage
-            picture={item.picture}
-            title={item.title}
+              picture={item.picture}
+              title={item.title}
             />
             <ItemData
               currency={item.price.currency}

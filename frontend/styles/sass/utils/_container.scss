@@ -69,13 +69,13 @@
 
 //Modeling
 @mixin container-fluid(
-    $padding-x: 14px,
+    $padding-x: auto,
     $margin-x: auto,
     $width: 100vw,
     $height: auto
 ){
     @include setMargin-x($margin-x);
-    @include setPadding-x($margin-x);
+    @include setPadding-x($padding-x);
     @include setWidth($width);
     @include setHeight($height);
 
@@ -112,7 +112,7 @@
 }
 
 @mixin container(
-    $padding-x: 14px,
+    $padding-x: auto,
     $margin-x: auto,
     $width: 80vw,
     $height: auto
@@ -126,13 +126,13 @@
 }
 
 @mixin simpleContainer(
-    $padding-x: 14px,
+    $padding-x: auto,
     $margin-x: auto,
     $width: 100vw,
     $height: auto
 ){
     @include setMargin-x($margin-x);
-    @include setPadding-x($margin-x);
+    @include setPadding-x($padding-x);
     @include setWidth($width);
     @include setHeight($height);
 }

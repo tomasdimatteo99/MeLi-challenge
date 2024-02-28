@@ -16,8 +16,8 @@
             $margin:16px,
             $margin-b:0px
         );
-        padding-bottom: 16px;
         @include flexRow($justifyContent: flex-start, $alingItems:center);
+        padding-bottom: 16px;
         border-bottom: 3px solid $bgLightGray;
     }
 }
